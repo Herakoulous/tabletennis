@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/512/7619/7619818.png" type="image/x-icon">
+    <title>Quiz</title>
+</head>
+<body id="quiz-body">
+
+    <nav class="menu">
+        <a href="index.html"> Κεντρική </a>
+        <a href="rules.html" > Κανόνες </a>
+        <a href="history.html"> Ιστορία του αθλήματος </a>
+        <a href="shop.html"> Εξοπλισμός </a>
+        <a href="contacts.html"> Πληροφορίες επικοινωνίας </a>
+        <a id="a-border" href="quiz.html">Quiz</a>
+        <a id="changeColorButton" style = "display: none;"></a>
+        <img src="https://cdn-icons-png.freepik.com/512/7619/7619818.png">
+    </nav>
+
+    <p id="nameinput" class="inputcont">
+      <label for="userInput">Στο παρακάτω quiz περιλαμβάνονται ερωτήσεις σχετικά με <br> τους κανόνες 
+        και την ιστορία της επιτραπέζιας αντισφαίρισης, <br> οι οποίες μπορούν να απαντηθούν με βάση τις πληροφορίες <br> της ιστοσελίδας. <br>
+        Ποιο είναι το όνομά σου: </label> 
+      <input type="text" id="userInput" name="userName">
+      <button onclick="namefunc()">Υποβολή</button>
+      </p>
+      <p id="welcometxt" class="messagecont"></p>
+
+      
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="quiz"></div>
+        <button id="next">Υποβολή</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
